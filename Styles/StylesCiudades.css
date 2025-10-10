@@ -1,0 +1,350 @@
+
+.Gallery {
+  display: flex;              /* activa flexbox */
+	justify-content: center;    /* centra horizontalmente todo el bloque */
+	align-items: flex-start;    /* alinea arriba los tres elementos */
+	gap: 15px;                  /* espacio entre imágenes y tabla */
+}
+
+.ConteCiudades {
+	display: flex;              /* activa flexbox */
+	justify-content: center;    /* centra horizontalmente todo el bloque */
+	align-items: flex-start;    /* alinea arriba los tres elementos */
+	gap: 20px;                  /* espacio entre imágenes y tabla */
+	background-color: #F4F1F1;
+	padding-top: 2%;
+  margin: 2%;
+	border: 1px solid black;
+	width: 96%;
+}
+
+.ConteCiudades figcaption {
+  font-size: 20px;
+  margin-top: 2%;
+}
+
+.Ciudades1, .Ciudades2 {
+	display: flex;
+	flex-direction: column;     /* que las figuras estén una debajo de otra */
+	gap: 15px;                  /* espacio entre imágenes */
+	align-items: center;        /* centrar las figuras */
+	width: 200px;               /* ancho fijo opcional */
+	margin: 0% 3%;
+}
+
+.Ciudades1 figure, .Ciudades2 figure {
+	margin: 0;
+	text-align: center;
+  margin-bottom: 10%;
+}
+
+.Ciudades1 img, .Ciudades2 img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Imagenes que se abren al pinchar sobre ellas */
+.Ciudades1 {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.Ciudades1 figure {
+  text-align: center;
+  cursor: pointer;
+}
+
+.Ciudades1 img {
+  width: 200px;
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
+
+.Ciudades1 img:hover {
+  transform: scale(1.05);
+}
+	
+.Ciudades2 {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.Ciudades2 figure {
+  text-align: center;
+  cursor: pointer;
+}
+
+.Ciudades2 img {
+  width: 200px;
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
+
+.Ciudades2 img:hover {
+  transform: scale(1.05);
+}
+	
+/* Fondo semitransparente */
+.lightbox {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /*El último valor (0.5) controla la opacidad del fondo (0 = transparente, 1 = opaco)*/
+}
+
+/* Imagen dentro del lightbox */
+.lightbox img {
+  margin: auto;
+  width: 75%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #000;
+}
+
+/* Botón de cerrar fijo en la esquina superior derecha */
+.close-btn {
+  position: absolute;   /* fuera del flujo */
+  width: 25px;
+  top: 10px;
+  right: 4%;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  background: #e0e0e0;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.close-btn:hover {
+  background: #d6d6d6;
+}
+/* Fin de imagenes que se abren al pinchar sobre ella */
+
+table {
+  border-collapse: collapse; /* Une los bordes */
+  border: none;
+  table-layout: fixed;       /* Ajusta las columnas al contenido */
+  margin: auto;
+  margin-bottom: 5%;
+  width: 50%;
+  text-align: center;
+  font-size: 24px;
+}
+
+caption {
+  font-size: 24px;
+	width: 100%;
+	Margin: auto;
+	padding-bottom: 2%;
+  margin-left: 0%;
+}
+
+.Mayuscula {
+  text-transform: uppercase;
+}
+
+tr:first-child {
+  margin: 1.5%;
+  font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black; /* Líneas negras */
+    padding: 2px 5px;        /* Espacio mínimo dentro de las celdas */
+    white-space: nowrap;     /* Evita que se parta el texto en varias líneas */
+    border: none;
+}
+
+td:first-child {
+	width: 4%;                    /* fuerza que coja lo mínimo posible */
+	white-space: nowrap;
+	text-align: center;           /* opcional, para centrar los números */
+	background-color: #C7C2C1;
+}
+
+.gallery {
+	display: grid;
+	gap: 12px;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.demo {
+  position: relative;
+  display: inline-block;
+}
+
+.trigger {
+  padding: 10px 20px;
+  color: blue;
+  cursor: pointer;
+}
+
+.hover-modal {
+  position: absolute;
+  top: 110%; /* debajo del botón */
+  left: 0;
+  width: 250px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+  z-index: 1000;
+}
+
+.demo:hover .hover-modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hover-modal p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.hover-modal hr {
+  margin: 10px 0;
+}
+
+.hover-modal img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* figura para poder añadir caption luego si se quiere */
+.item {
+	overflow: hidden;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* que la imagen cubra manteniendo aspecto */
+.item img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform .35s ease;
+}
+
+/* efecto hover */
+.item:hover img,
+.item:focus-within img {
+	transform: scale(1.05);
+}
+
+/*Notas: usar object-fit: cover para mantener recorte uniforme.
+repeat(auto-fill, minmax(...)) hace la galería responsive sin media queries. */
+
+.gallery2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.gallery2 figure {
+  margin: 0;
+  background:#fff;
+  border-radius:10px;
+  overflow:hidden;
+  cursor: pointer;
+  transition: transform .2s;
+  outline: none;
+}
+
+.gallery2 figure:focus {
+  box-shadow: 0 0 0 3px rgba(21,156,228,0.25);
+}
+
+.gallery2 img {
+  width:100%;
+  height:160px;
+  object-fit: cover;
+  display:block;
+}
+
+.gallery2 figcaption {
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Consejos de accesibilidad:
+	Siempre incluye alt descriptivos.
+	Usar tabindex="0" si quieres que figure sea focuable y usable con teclado.
+	loading="lazy" mejora el rendimiento. */
+
+.thumbs img { width: 120px; height: 80px; object-fit:cover; margin:6px; border-radius:6px; }
+
+.lightbox {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 50;
+}
+
+.lightbox img {
+  max-width: 95%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+/* cuando el id es objetivo (target) se muestra */
+.lightbox:target {
+  display: flex;
+}
+
+/* botón de cerrar (en realidad un enlace) */
+.close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  width: 36px;
+  height: 36px;
+  text-indent: -9999px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+}
+
+/* Cómo funciona:
+los enlaces de miniaturas apuntan a #img1, etc.
+Al activarse :target CSS muestra el overlay.
+Para cerrar, el href="#_" quitar el target. */
+
+#Gallery2 {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+  padding-top: 1%;
+}
+
+#Gallery2 figcaption {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}

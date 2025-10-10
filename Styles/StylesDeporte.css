@@ -1,0 +1,112 @@
+
+header ul li:nth-of-type(7) {
+	text-decoration: overline;
+}
+
+.contenedor-scroll {
+    width: 35%;
+    margin-left: 30%;
+    overflow: hidden;     /* Oculta el contenido que no cabe */
+    white-space: nowrap;  /* Evita que el texto se corte en líneas nuevas */
+    box-sizing: border-box;
+}
+
+.contenedor-scroll p {
+  display: inline-block;        /* Permite que el texto se mueva como un solo bloque */
+  padding-left: 100%;           /* Empieza oculto fuera de la pantalla */
+  animation: scroll-left 10s linear infinite; /* Anima el texto */
+  color: blue;
+  font-size: 48px;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }          /* Inicio */
+  100% { transform: translateX(-200%); }    /* Fin del movimiento */
+}
+
+main p, .Justufucado {
+    text-align: center;
+    text-align: justify;
+    font-size: 24px;
+    margin: auto;
+    width: 75%;
+    margin-bottom: 2%;
+}
+
+.Seleccion {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	justify-content: center;
+	gap: 5px;
+	width: 100%;
+	margin: auto;
+    margin-bottom: 1.5%;
+    width: calc(70% - 1em);
+}
+
+.Seleccion figure {
+    margin: auto;
+    width: 70%;
+    text-align: center;
+}
+
+.Seleccion figcaption {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.Seleccion p {
+    margin: auto;
+    width: 100%;
+    text-align: justify;
+}
+
+.Seleccion1 {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	justify-content: center;
+	gap: 5px;
+	width: 100%;
+	margin: auto;
+	margin-top: .5%;
+    width: calc(80% - 1em);
+}
+
+.Seleccion1 figure {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.Seleccion1 figcaption {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.Seleccion1 p {
+    text-align: justify;
+    margin: auto;
+    width: 100%;
+}
+
+#Copa{
+    width: 650px;
+}
+
+#Seleccion{
+    width: 600px;
+    height: 500px;
+}
+
+#Michael {
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+    object-position: top;
+}

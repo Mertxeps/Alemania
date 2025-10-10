@@ -1,0 +1,28 @@
+
+header ul li:nth-of-type(4) {
+	text-decoration: overline;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+	text-align: center;
+	width: 75%;
+	Margin: auto;
+	padding-bottom: 2%;
+}
+
+figure {
+    margin: auto;
+    width: 50%;
+}
+
+figcaption {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 2%;
+}

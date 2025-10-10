@@ -1,0 +1,67 @@
+
+header ul li:nth-of-type(6) {
+	text-decoration: overline;
+}
+
+main {
+    text-align: center;
+}
+
+main p {
+    font-size: 24px;
+}
+
+main a {
+  display: inline;
+  font-size: 28px;
+  margin: 5%;
+  text-decoration: none;
+  color: blue;
+}
+
+#Margenes {
+    font-size: 18px;
+	width: 60%;
+	Margin: auto;
+    padding: 4% 0% 2% 0%;
+}
+
+.Espaciado {
+    display: flex;
+}
+
+figure {
+    width: calc(33.33% - 1em);
+}
+
+figcaption {
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 2%;
+}
+
+figure img {  
+    height: 480px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Inicio Media Queries */
+@media (max-width: 950px) {
+   .Espaciado {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

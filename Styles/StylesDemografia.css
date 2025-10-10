@@ -1,0 +1,39 @@
+
+header ul li:nth-of-type(5) {
+	text-decoration: overline;
+}
+
+main {
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+	width: 75%;
+	Margin: auto;
+	padding-bottom: 2%;
+}
+
+figure {
+    margin: auto;
+    width: 50%;
+}
+
+figure:last-of-type {
+    height: 5%;
+}
+
+figcaption {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 2%;
+}
+
+main a {
+  display: inline;         /* Permite aplicar márgenes alrededor del enlace */
+  font-size: 28px;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  text-decoration: none;   /* Quita el subrayado (opcional) */
+  color: blue;
+}

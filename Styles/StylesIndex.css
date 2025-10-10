@@ -1,0 +1,29 @@
+
+	header ul li:nth-of-type(1) {
+		text-decoration: overline;
+	}
+	
+	H1 {
+		Margin: auto;
+		width: 50%;
+		text-align: center;
+		color: red;
+	}
+
+	main {
+		text-align: center;
+	}
+	
+	main img {
+		margin: auto;
+		width: 50%;
+	}
+	
+	main p {
+		font-size: 18px;
+		text-align: center;
+		width: 75%;
+		Margin: auto;
+		padding-bottom: 2%;
+	}
+	

@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+
+	<html lang = "es">
+
+    <head>
+	
+        <meta charset = "utf-8">
+
+        <meta name = "viewport" content = "width=device-width,initial-scale=1" />
+		
+		<title>Música</title>
+		
+		<link rel = "shortcut icon" href = "favicon/frio.png" type = "Image/jpg" sizes = "64x64">
+						
+		<link rel = "stylesheet" type = "text/css" href = "../Styles/Layout.css">
+		<link rel = "stylesheet" type = "text/css" href = "../Styles/StylesMusica.css">
+
+    </head>
+
+    <body>
+
+		<header class = "Cabecera">
+			<img src = "../Images/Logo.jpg" alt = "Imagen de la bandera de Alemania con forma redonda">
+							
+			<nav>
+				<ul class = "menu">
+					<li><a href = "../index.html">Inicio</a></li>
+					<li><a href = "Geografia.html" target = "_parent">Geografía</a></li>
+					<li><a href = "Economia.html" target = "_parent">Economía</a></li>
+					<li><a href = "Infraestructura.html" target = "_parent">Infraestructura</a></li>
+					<li class = "dropdown"><a href = "Demografia.html">Demografía</a>
+						<ul class = "dropdown-content">
+							<li><a href = "Idiomas.html">Idiomas</a></li>
+							<li><a href = "Ciudades.html">Ciudades</a></li>
+						</ul>
+					</li>
+					<li class = "dropdown"><a href = "Cultura.html" target = "_parent">Cultura</a>
+						<ul class = "dropdown-content">
+							<li><a href = "Musica.html">Música</a></li>
+							<li><a href = "Gastronomia.html">gastronomía</a></li>
+							<li><a href = "Sociedad.html">Sociedad</a></li>
+						</ul>
+					</li>
+					<li><a href = "Deporte.html" target = "_parent">Deporte</a></li>
+					<li><a href = "Info.html" target = "_parent">Info</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+			<img id = "QuenoPare" src = "../Images/musica.png" alt = "imagen con texto en inglés que dice que no pare la música">
+
+			<svg xmlns = "http://www.w3.org/2000/svg" fill = "none" viewBox = "0 0 24 24" stroke-width = "1.5" stroke = "currentColor" class = "IconoDerecha">
+				<path stroke-linecap = "round" stroke-linejoin = "round" d = "m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z" />
+			</svg>
+
+			<svg xmlns = "http://www.w3.org/2000/svg" fill = "none" viewBox = "0 0 24 24" stroke-width = "1.5" stroke = "currentColor" class = "IconoIzquierda">
+				<path stroke-linecap = "round" stroke-linejoin = "round" d = "m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z" />
+			</svg>
+
+			<p>En Alemania se han desarrollado algunos de los más renombrados compositores de la Música clásica europea, con inclusión de Johann Sebastian Bach, Georg Friedrich Händel, Ludwig van Beethoven, Robert Schumann, Felix Mendelssohn, y Johannes Brahms. A partir del año 2006, Alemania es el quinto mercado de la música en el mundo y ha influido en la música, llegando a ser pionero de algunos géneros como la música electrónica, el metal industrial, pop, rock a través de artistas como Modern Talking, Alphaville, Mena, Rammstein, Lacrimosa, Kraftwerk, Scorpions, Accept, Helloween y Tokio Hotel.</p>
+
+			<div class = "TamanoMusica">
+				<div class = "Audios">
+					<div class = "Titulos">
+						<p>Johann Sebastian Bach</p>
+						<p>Toccata e fuga</p>
+					</div>
+					<audio controls loop preload = "auto" muted</audio> <!-- para que salga activado el sonido y desactivarlo manualmente,hay que quitar muted. Quedaría: <audio controls autoplay loop preload = "auto" </audio>-->
+						<source src = "../Music/Tocata y fuga.mp3" type = "audio/mpeg">
+						<!-- <track src="subtitulos.vtt" kind="subtitles" srclang="de" label="Alemán" default>-->
+						Tu navegador no soporta la etiqueta de audio.
+					</audio>
+				</div>
+
+				<div class = "Audios">
+					<div class = "Titulos">
+						<p>Beethoven</p>
+						<p>Sinfonía nº 5</p>
+					</div>
+					<audio controls loop preload = "auto" muted</audio> <!-- para que salga activado el sonido y desactivarlo manualmente,hay que quitar muted. Quedaría: <audio controls autoplay loop preload = "auto" </audio>-->
+						<source src = "../Music/5th Symphony.mp3" type = "audio/mpeg">
+						<!-- <track src="subtitulos.vtt" kind="subtitles" srclang="de" label="Alemán" default>-->
+						Tu navegador no soporta la etiqueta de audio.
+					</audio>
+				</div>
+
+				<div class = "Audios">
+					<div class = "Titulos">
+						<p>Richard Wagner</p>
+						<p>Die Walküre</p>
+					</div>
+					<audio controls loop preload = "auto" muted</audio> <!-- para que salga activado el sonido y desactivarlo manualmente,hay que quitar muted. Quedaría: <audio controls autoplay loop preload = "auto" </audio>-->
+						<source src = "../Music/The Valkyrie.mp3" type = "audio/mpeg">
+						<!-- <track src="subtitulos.vtt" kind="subtitles" srclang="de" label="Alemán" default>-->
+						Tu navegador no soporta la etiqueta de audio.
+					</audio>
+				</div>
+			</div>
+
+			<p class = "Negrita">¿Cómo es la música típica de Alemania?</p>
+			<p>Un "levenslied" típico tiene ritmos y melodías pegadizas y sencillas (en común con muchas melodías pop y folclóricas) y está estructurado en coplas y estribillos. Los instrumentos tradicionales de la música "levenslied" son el acordeón y el organillo: por ejemplo, Nicole y Hugo.</p>
+		
+			<p class = "Negrita">Ocho datos sobre la música alemana</p>
+			<p>Desde el grupo más popular hasta la canción de mayor éxito: los datos más importantes sobre la música en Alemania.</p>
+			
+			<img id = "Helen" src = "../Images/Helene Fischer.jpg" alt = "Imagen de Helen Ficher, famosa interprete alemana">
+			
+			<p>1. En más de 50 años, los “Scorpions”, de Hannover, vendieron más de 110 millones de discos: son probablemente el grupo alemán de mayor éxito internacional hasta la fecha. En 2017 fueron incluidos en el "Hall of Heavy Metal History" de Estados Unidos.</p>
+			<p>2. Éxito internacional de Alemania: la balada rockera “Wind of Change” de los “Scorpions” es el single de producción alemana más exitoso del mundo. La canción se convirtió en el himno de la revolución pacífica que condujo a la caída del Cortina de Hierro en Europa.</p>
+			<p>3. Éxito internacional en Alemania: ninguna canción ha figurado en las listas alemanas de éxitos musicales tan a menudo como “Last Christmas”, de George Michael:  153 semanas. Pero no fue sino 37 años después de su lanzamiento que la canción llegó a ocupar el número uno en las listas de singles alemanas, por primera vez en 2021.</p>
+			<p>4. La canción “Looking for Freedom”, de David Hasselhoff, está indisolublemente ligada a la caída del Muro en Alemania. En 1989, el estadounidense cantó la canción en la fiesta de Nochevieja frente a la Puerta de Brandeburgo, en Berlín.</p>
+			
+			<div class = "Audios1">
+				<div class = "Titulos">
+					<p>David Hasselhoff</p>
+					<p>Looking For Freedom</p>
+				</div>
+				<audio controls loop preload = "auto" muted</audio> <!-- para que salga activado el sonido y desactivarlo manualmente,hay que quitar muted. Quedaría: <audio controls autoplay loop preload = "auto" </audio>-->
+					<source src = "../Music/Looking For Freedom (offizielles Video) David Hasselhoff.mp3" type = "audio/mpeg">
+					<!-- <track src = "subtitulos.vtt" kind="subtitles" srclang="de" label = "Alemán" default> -->
+					Tu navegador no soporta la etiqueta de audio.
+				</audio>
+			</div>
+			
+			<p id = "Cinco">5. Sobre todo el pop electrónico es hoy uno de los mayores éxitos musicales de exportación de Alemania. El DJ y productor alemán más popular en todo el mundo es Robin Schulz, que se hizo internacionalmente famoso con “Prayer in C”.</p>
+			
+			<div class = "Audios2">
+				<div class = "Titulos">
+					<p>Modo</p>
+					<p>Eins Zwei Polizei</p>
+				</div>
+				<audio controls loop preload = "auto" muted</audio> <!-- para que salga activado el sonido y desactivarlo manualmente,hay que quitar muted. Quedaría: <audio controls autoplay loop preload = "auto" </audio>-->
+					<source src = "../Music/Mo Do Eins Zwei Polizei.mp3" type = "audio/mpeg">
+					<!-- <track src = "subtitulos.vtt" kind="subtitles" srclang="de" label = "Alemán" default> -->
+					Tu navegador no soporta la etiqueta de audio.
+				</audio>
+			</div>
+			
+			<p id = "Seis">6. El género musical más popular en Alemania es desde hace años el “deutschrap” (hip hop alemán). En 2021, el rapero Bonez MC ocupó el primer puesto entre los artistas más escuchados de Spotify en Alemania, seguido de Luciano y Capital Bra.</p>
+			<p>7. Lo que la música “country” es en Estados Unidos, es el “schlager” en Alemania. Originado a principios del siglo XX, el “schlager” pasó por varias transformaciones. En los años ochenta y noventa, atraía sobre todo al público mayor. Desde el cambio de milenio, los ritmos modernos y las letras pegadizas han hecho que sean sobre todo los jóvenes quienes se dejen llevar también por el “schlager”. Sin embargo, siempre ha conservado una cosa: la melodía es sencilla y la letra es en alemán.</p>
+			<p id = "Espacio">8. La cantante pop alemana Helene Fischer alcanzó la fama internacional en 2018, al ser incluida en la lista de Forbes de las diez artistas musicales que más ganan en el mundo, por delante de Britney Spears y Céline Dion. Antes de ello, la principal estrella del pop alemán apenas era conocida en el extranjero. Su álbum “Best of Helene Fischer”, de 2010, figuró 350 veces en las lista alemana de éxitos longplay.</p>
+		</main>
+		
+		<footer>
+			<div class = "ContenedorFooter">
+				<div class = "copy">
+					<p>© 2024 Creado por Mertxe</p>
+				</div>
+			</div>
+		</footer>
+	
+	</body>
+	
+</html>

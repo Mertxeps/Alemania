@@ -1,0 +1,64 @@
+
+.Contenedor{
+    background-color: white;
+}
+
+main {
+    margin: auto;
+    width: 100%;
+    font-size: 24px;
+}
+
+main .ColorFondo {
+    background-color: rgb(170, 204, 235);
+    background-image: url ("Castillo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 3vw 2em;
+    text-align: center;
+    margin-top: 2%;
+    height: 73vh;
+}
+
+#Castillo {
+    width: 90%;
+    height: 60vh;
+}
+
+figcaption {
+    text-align: center;
+    /* margin-bottom: 2%; */
+}
+
+p {
+    text-align: left;
+    padding: 0 2%;
+}
+
+p:last-of-type {
+    font-size: 24px;
+    text-align: center;
+    padding: 0 2%;
+}
+
+h1 {
+    margin: 0%;
+}
+
+.UbicacionFisica{
+    margin-left: 6%;
+}
+
+main ul {
+	display: inline-block;
+	justify-content: left;
+    margin-left: 4%;
+    list-style-type: disc;
+}
+
+main ul ul li {
+    list-style-type: circle;
+    margin-left: 4%;
+    width: 100%;
+}
