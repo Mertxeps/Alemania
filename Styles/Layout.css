@@ -8,6 +8,11 @@ body {
     font-family: Calibri, sans-serif;
 }
 
+/* Ocultar hamburguesa */
+	label[for = "menu"] {
+		display: none;
+	}
+
 /* --- Cabecera --- */
 .Cabecera {
     display: flex;
