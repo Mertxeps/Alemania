@@ -98,73 +98,73 @@ body {
 /* Para tables */
 @media (max-width: 768px) {
     * {
-	box-sizing: content-box;
-}
+	    box-sizing: content-box;
+    }
 
-body {
-	margin: auto;
-	width: 100%;
-}
+    body {
+        margin: auto;
+        width: 100%;
+    }
 
-nav {
-    position: sticky;
-    top: 0;
-    background-color: white;
-}
+    nav {
+        position: sticky;
+        top: 0;
+        background-color: white;
+    }
 
-/* Esconde el cuadrado del checkbox */
-#menu {
-    display: none;
-}
+    /* Esconde el cuadrado del checkbox */
+    #menu {
+        display: none;
+    }
 
-/* redimensión del icono de hamburguesa */
-nav svg {
-    width: 50px;
-    height: 50px;
-}
+    /* redimensión del icono de hamburguesa */
+    nav svg {
+        width: 50px;
+        height: 50px;
+    }
 
-/* Esconder el logo y la lista */
-.menu-desplegable {
-    display: none;
-    text-align: center;
-}
+    /* Esconder el logo y la lista */
+    .menu-desplegable {
+        display: none;
+        text-align: center;
+    }
 
-/* Cuando el checkbox está marcado, hace que el logo y la lista sean visibles */
-input:checked~.menu-desplegable {
-    display: block;
-}
+    /* Cuando el checkbox está marcado, hace que el logo y la lista sean visibles */
+    input:checked~.menu-desplegable {
+        display: block;
+    }
 
-/* redimensión del logo */
-nav a img {
-    width: 30%;
-}
+    /* redimensión del logo */
+    nav a img {
+        width: 30%;
+    }
 
-/* Para quitar los estilos predeterminados de la lista */
-ul.menu-desplegable {
-    list-style: none;
-    padding: 0;
-}
+    /* Para quitar los estilos predeterminados de la lista */
+    ul.menu-desplegable {
+        list-style: none;
+        padding: 0;
+    }
 
-/* Añade una separación a los elementos de la lista */
-ul.menu-desplegable li {
-    padding: 0.5em;
-}
+    /* Añade una separación a los elementos de la lista */
+    ul.menu-desplegable li {
+        padding: 0.5em;
+    }
 
-/* Estilo en los enlaces de la lista */
-ul.menu-desplegable a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    padding: 0.2em 0.4em;
-}
+    /* Estilo en los enlaces de la lista */
+    ul.menu-desplegable a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        padding: 0.2em 0.4em;
+    }
 
-/* Cambia los estilos de los enlaces cuando el cursor esta sobre ellos */
-ul.menu-desplegable a:hover {
-    background-color: #F54927;
-    color: yellow;
-}
+    /* Cambia los estilos de los enlaces cuando el cursor esta sobre ellos */
+    ul.menu-desplegable a:hover {
+        background-color: #F54927;
+        color: yellow;
+    }
 
-.ContenedorFooter {
+    .ContenedorFooter {
         background-color: black;
         padding: .5%;
     }
@@ -179,73 +179,73 @@ ul.menu-desplegable a:hover {
 /* Para móviles */
 @media (max-width: 480px) {
     * {
-	box-sizing: content-box;
-}
+	    box-sizing: content-box;
+    }
 
-body {
-	margin: auto;
-	width: 100%;
-}
+    body {
+        margin: auto;
+        width: 100%;
+    }
 
-nav {
-    position: sticky;
-    top: 0;
-    background-color: white;
-}
+    nav {
+        position: sticky;
+        top: 0;
+        background-color: white;
+    }
 
-/* Esconde el cuadrado del checkbox */
-#menu {
-    display: none;
-}
+    /* Esconde el cuadrado del checkbox */
+    #menu {
+        display: none;
+    }
 
-/* redimensión del icono de hamburguesa */
-nav svg {
-    width: 50px;
-    height: 50px;
-}
+    /* redimensión del icono de hamburguesa */
+    nav svg {
+        width: 50px;
+        height: 50px;
+    }
 
-/* Esconder el logo y la lista */
-.menu-desplegable {
-    display: none;
-    text-align: center;
-}
+    /* Esconder el logo y la lista */
+    .menu-desplegable {
+        display: none;
+        text-align: center;
+    }
 
-/* Cuando el checkbox está marcado, hace que el logo y la lista sean visibles */
-input:checked~.menu-desplegable {
-    display: block;
-}
+    /* Cuando el checkbox está marcado, hace que el logo y la lista sean visibles */
+    input:checked~.menu-desplegable {
+        display: block;
+    }
 
-/* redimensión del logo */
-nav a img {
-    width: 30%;
-}
+    /* redimensión del logo */
+    nav a img {
+        width: 30%;
+    }
 
-/* Para quitar los estilos predeterminados de la lista */
-ul.menu-desplegable {
-    list-style: none;
-    padding: 0;
-}
+    /* Para quitar los estilos predeterminados de la lista */
+    ul.menu-desplegable {
+        list-style: none;
+        padding: 0;
+    }
 
-/* Añade una separación a los elementos de la lista */
-ul.menu-desplegable li {
-    padding: 0.5em;
-}
+    /* Añade una separación a los elementos de la lista */
+    ul.menu-desplegable li {
+        padding: 0.5em;
+    }
 
-/* Estilo en los enlaces de la lista */
-ul.menu-desplegable a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    padding: 0.2em 0.4em;
-}
+    /* Estilo en los enlaces de la lista */
+    ul.menu-desplegable a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        padding: 0.2em 0.4em;
+    }
 
-/* Cambia los estilos de los enlaces cuando el cursor esta sobre ellos */
-ul.menu-desplegable a:hover {
-    background-color: #F54927;
-    color: yellow;
-}
+    /* Cambia los estilos de los enlaces cuando el cursor esta sobre ellos */
+    ul.menu-desplegable a:hover {
+        background-color: #F54927;
+        color: yellow;
+    }
 
-.ContenedorFooter {
+    .ContenedorFooter {
         background-color: black;
         padding: .5%;
     }
