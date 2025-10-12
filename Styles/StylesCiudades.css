@@ -360,3 +360,14 @@ Para cerrar, el href="#_" quitar el target. */
 
 
 
+/* --- MEDIA QUERIES --- */
+
+/* Para tables */
+@media (max-width: 768px) {
+	
+}
+
+/* Para móviles */
+@media (max-width: 480px) {
+	
+}
