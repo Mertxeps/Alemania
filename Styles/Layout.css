@@ -9,9 +9,24 @@ body {
 }
 
 /* Ocultar hamburguesa */
-	label[for = "menu"] {
-		display: none;
-	}
+label[for = "menu"] {
+	display: none;
+}
+
+/* Mostrar los elementos en línea */
+.BarrasNavegacion {
+	display: flex;
+	align-items: center;       /* Centra verticalmente */
+	justify-content: space-between; /* Deja logo a la izquierda y menú a la derecha */
+	padding: 0 5%;            /* Espaciado horizontal opcional */
+}
+
+/* Asegurarte de que los elementos se muestren */
+.menu-desplegable {
+	display: flex !important;
+	align-items: center;
+	gap: 30px; /* Espacio entre logo y menú */
+}
 
 /* --- Cabecera --- */
 .Cabecera {
@@ -102,14 +117,14 @@ body {
 
 /* Para tables */
 @media (max-width: 768px) {
-    * {
+    /* * {
 	    box-sizing: content-box;
     }
 
     body {
         margin: auto;
         width: 100%;
-    }
+    } */
 
     nav {
         position: sticky;
