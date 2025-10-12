@@ -22,3 +22,21 @@ img {
     width: 650px;
     height: 650px;
 }
+
+
+
+
+
+
+
+/* --- MEDIA QUERIES --- */
+
+/* Para tables */
+@media (max-width: 768px) {
+	
+}
+
+/* Para móviles */
+@media (max-width: 480px) {
+	
+}

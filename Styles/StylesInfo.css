@@ -64,3 +64,21 @@ h1 {
     margin: auto;
     width: 100%;
 }
+
+
+
+
+
+
+
+/* --- MEDIA QUERIES --- */
+
+/* Para tables */
+@media (max-width: 768px) {
+	
+}
+
+/* Para móviles */
+@media (max-width: 480px) {
+	
+}

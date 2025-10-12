@@ -37,3 +37,23 @@ main a {
   text-decoration: none;   /* Quita el subrayado (opcional) */
   color: blue;
 }
+
+
+
+
+
+
+
+
+
+/* --- MEDIA QUERIES --- */
+
+/* Para tables */
+@media (max-width: 768px) {
+	
+}
+
+/* Para móviles */
+@media (max-width: 480px) {
+	
+}

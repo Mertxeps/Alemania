@@ -57,11 +57,23 @@ figure img {
 
 
 
-/* Inicio Media Queries */
-@media (max-width: 950px) {
+
+
+
+/* --- MEDIA QUERIES --- */
+
+/* Para tables */
+@media (max-width: 768px) {
+	
+}
+
+/* Para móviles */
+@media (max-width: 480px) {
+	
+}
+
+/* @media (max-width: 950px) {
    .Espaciado {
         display: flex;
         flex-direction: column;
-    }
-    
-}
+} */

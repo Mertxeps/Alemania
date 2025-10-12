@@ -22,3 +22,17 @@ figcaption {
     font-weight: bold;
     padding-bottom: 2%;
 }
+
+
+
+/* --- MEDIA QUERIES --- */
+
+/* Para tables */
+@media (max-width: 768px) {
+	
+}
+
+/* Para móviles */
+@media (max-width: 480px) {
+	
+}
