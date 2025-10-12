@@ -13,20 +13,24 @@ label[for = "menu"] {
 	display: none;
 }
 
+#menu {
+    display: none;
+}
+
 /* Mostrar los elementos en línea */
 .BarrasNavegacion {
 	display: flex;
-	align-items: center;       /* Centra verticalmente */
+	align-items: center;
 	justify-content: space-between; /* Deja logo a la izquierda y menú a la derecha */
-	padding: 0 5%;            /* Espaciado horizontal opcional */
+	padding: 0 5%;
 }
 
 /* Asegurarte de que los elementos se muestren */
-.menu-desplegable {
+/* .menu-desplegable {
 	display: flex !important;
 	align-items: center;
 	gap: 30px; /* Espacio entre logo y menú */
-}
+} */
 
 /* --- Cabecera --- */
 .Cabecera {
@@ -117,14 +121,6 @@ label[for = "menu"] {
 
 /* Para tables */
 @media (max-width: 768px) {
-    /* * {
-	    box-sizing: content-box;
-    }
-
-    body {
-        margin: auto;
-        width: 100%;
-    } */
 
     nav {
         position: sticky;
@@ -198,14 +194,6 @@ label[for = "menu"] {
 
 /* Para móviles */
 @media (max-width: 480px) {
-    * {
-	    box-sizing: content-box;
-    }
-
-    body {
-        margin: auto;
-        width: 100%;
-    }
 
     nav {
         position: sticky;
