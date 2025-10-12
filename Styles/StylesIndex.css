@@ -48,10 +48,35 @@
 
 /* Para tables */
 @media (max-width: 768px) {
-	
+	H1 {
+		width: 80%;
+		font-size: 1.8em; /* Reduce un poco el tamaño del título */
+	}
+
+	main img {
+		width: 70%; /* Imagen algo más pequeña */
+	}
+
+	main p {
+		width: 90%;
+		font-size: 16px; /* Letra más pequeña y legible en tablet */
+	}
 }
 
 /* Para móviles */
 @media (max-width: 480px) {
+	H1 {
+		width: 100%;
+		font-size: 1.5em; /* Título más compacto */
+	}
 
+	main img {
+		width: 90%; /* Imagen ocupa casi todo el ancho */
+	}
+
+	main p {
+		width: 95%;
+		font-size: 14px; /* Letra más pequeña para pantallas reducidas */
+		padding-bottom: 4%; /* Más espacio entre párrafos */
+	}
 }

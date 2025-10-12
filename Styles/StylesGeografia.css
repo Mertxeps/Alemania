@@ -76,12 +76,6 @@ aside img {
     background: rgba(0,0,0,0.8);
 }
 
-/*.UbicacionFisica {
-	margin: auto;
-	width: 80%;
-	text-align: left;
-}*/
-
 .Demo {
     display: flex;
     justify-content: center; /* centra horizontalmente */
@@ -105,3 +99,26 @@ aside img {
     visibility: visible;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- MEDIA QUERIES --- */
+
+/* Para tables */
+@media (max-width: 768px) {
+	
+}
+
+/* Para móviles */
+@media (max-width: 480px) {
+	
+}
