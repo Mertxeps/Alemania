@@ -139,11 +139,11 @@ label[for = "menu"] {
         height: 50px;
     }
 
-    /* Esconder el logo y la lista */
+    /* Esconder el logo y la lista
     .menu-desplegable {
         display: none;
         text-align: center;
-    }
+    } */
 
     /* Cuando el checkbox está marcado, hace que el logo y la lista sean visibles */
     input:checked~.menu-desplegable {
@@ -201,21 +201,10 @@ label[for = "menu"] {
         background-color: white;
     }
 
-    /* Esconde el cuadrado del checkbox */
-    #menu {
-        display: none;
-    }
-
     /* redimensión del icono de hamburguesa */
     nav svg {
         width: 50px;
         height: 50px;
-    }
-
-    /* Esconder el logo y la lista */
-    .menu-desplegable {
-        display: none;
-        text-align: center;
     }
 
     /* Cuando el checkbox está marcado, hace que el logo y la lista sean visibles */
