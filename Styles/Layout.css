@@ -159,6 +159,7 @@ body {
         box-shadow: none;
         display: none;
     }
+    
     .dropdown:hover .dropdown-content {
         display: block;
     }
@@ -170,4 +171,10 @@ body {
 		width: 60px;
 		height: 60px;
 	}
+
+    nav: {
+        position: sticky;
+        top: 0;
+    }
+
 }
