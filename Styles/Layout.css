@@ -115,7 +115,7 @@ body {
         flex-direction: column;
         width: 100%;
         background: white;
-        position: absolute;
+        position: relative;
         top: 60px;
         left: 0;
         box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -172,9 +172,20 @@ body {
 		height: 60px;
 	}
 
-    nav: {
+    nav {
         position: sticky;
         top: 0;
+    }
+
+    .menu-container {
+        position: relative;
+    }
+
+    .hamburger {
+    /*position: fixed;*/
+        height: 160vh;
+        z-index: 999;
+        padding-top:0%;
     }
 
 }
