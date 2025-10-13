@@ -115,10 +115,66 @@ aside img {
 
 /* Para tables */
 @media (max-width: 768px) {
-	
+	 aside {
+    width: 90%;
+  }
+
+  aside img {
+    width: 70%;
+    height: auto;
+  }
+
+  main p {
+    font-size: 20px;
+    width: 90%;
+  }
+
+  .carousel {
+    width: 80%;
+  }
+
+  .carousel-images img {
+    width: 100%;
+  }
+
+  .Trigger {
+    font-size: 22px;
+    padding: 8px 18px;
+  }
 }
 
 /* Para móviles */
 @media (max-width: 480px) {
-	
+	@media (max-width: 480px) {
+  aside {
+    width: 95%;
+  }
+
+  aside img {
+    width: 90%;
+    height: auto;
+  }
+
+  main p {
+    font-size: 16px;
+    width: 95%;
+  }
+
+  .carousel {
+    width: 95%;
+  }
+
+  .carousel-images img {
+    width: 100%;
+  }
+
+  .prev, .next {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .Trigger {
+    font-size: 18px;
+    padding: 6px 16px;
+  }
 }

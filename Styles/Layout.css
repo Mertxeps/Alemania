@@ -1,255 +1,170 @@
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0; padding: 0;
 }
 
 body {
-    margin: 0;
-    width: 100%;
-    font-family: Calibri, sans-serif;
+	font-family: Calibri, sans-serif;
 }
 
-/* Ocultar hamburguesa */
-label[for = "menu"] {
-	display: none;
-}
-
-#menu {
-    display: none;
-}
-
-/* Mostrar los elementos en línea */
-.BarrasNavegacion {
-	display: flex;
-	align-items: center;
-	justify-content: space-between; /* Deja logo a la izquierda y menú a la derecha */
-	padding: 0 5%;
-}
-
-/* Asegurarte de que los elementos se muestren */
-/* .menu-desplegable {
-	display: flex !important;
-	align-items: center;
-	gap: 30px; /* Espacio entre logo y menú */
-} */
-
-/* --- Cabecera --- */
+/* Cabecera */
 .Cabecera {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 290px 5px 10px;
-    margin: auto;
-    width: 100%;
+	margin: auto;
+	width: 100%;
+	background: white;
 }
 
-.Cabecera img {
+.BarrasNavegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	margin: auto;
+	width: 100%;
+    padding: 10px 5%;
+    position: relative;
+}
+
+/* Logo */
+.logo img {
     width: 50px;
     height: 50px;
 }
 
-/* --- Navegación --- */
+/* Menú horizontal */
 .menu {
     list-style: none;
     display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
+    gap: 25px;
 }
+
+.menu li {
+	position: relative;
+	}
 
 .menu li a {
     text-decoration: none;
     color: #333;
-    font-size: 24px;
-    padding: 10px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.3s;
 }
-
-.menu li ul {
-    display: none;
-    list-style: none;
-}
-
 .menu li a:hover {
-    background-color: #F54927;
-    color: yellow;
+	background-color: #F54927;
+	color: yellow;
+	border-radius: 5px;
 }
 
+/* Dropdown */
 .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 80px;
-    z-index: 1;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
 }
 
 .dropdown-content li a {
-    padding: 2% 0;
+	padding: 5px 10px;
+	display: block;
 }
 
-.dropdown-content li {
-   padding-bottom: 15%;
-   padding-top: 15%;
+/* Hamburgesa */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
 }
 
-.menu li.dropdown:hover .dropdown-content {
-    display: block;
-    text-decoration: none;
-}
-/* FIN --- Navegación --- */
-
-.copy p {
-	margin: auto;
-	width: 100%;
-	text-align: center;
-    font-size: 24px;
-	color: white;
+/* Checkbox oculto */
+#menu-toggle {
+	display: none;
 }
 
 .ContenedorFooter {
-	background-color: black;
-    padding: 2%;
+        background-color: black;
+        padding: .5%;
+    }
+
+.copy {
+	text-align: center;
+	font-size: 24px;
+	color: white;
 }
-
-
-
-
-
-
-
 
 /* --- MEDIA QUERIES --- */
 
 /* Para tables */
 @media (max-width: 768px) {
+    .hamburger {
+		display: block;
+	}
 
-    nav {
-        position: sticky;
-        top: 0;
-        background-color: white;
+    /* Ocultamos el menú-container por defecto */
+    .menu-container {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
-    /* Esconde el cuadrado del checkbox */
-    #menu {
+    /* Cuando se activa la hamburguesa */
+    #menu-toggle:checked + .hamburger + .menu-container {
+        display: flex;
+    }
+
+    /* Logo dentro del menú */
+    .menu-container .logo {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+    }
+    .menu-container .logo img {
+		width: 80px;
+		height: 80px;
+	}
+
+    /* Menú vertical */
+    .menu {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+	
+    .menu li {
+		text-align: center;
+		padding: 10px 0;
+	}
+	
+    .menu li a {
+		font-size: 18px;
+	}
+
+    /* Dropdown dentro del menú móvil */
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
         display: none;
     }
-
-    /* redimensión del icono de hamburguesa */
-    nav svg {
-        width: 50px;
-        height: 50px;
-    }
-
-    /* Esconder el logo y la lista
-    .menu-desplegable {
-        display: none;
-        text-align: center;
-    } */
-
-    /* Cuando el checkbox está marcado, hace que el logo y la lista sean visibles */
-    input:checked~.menu-desplegable {
+    .dropdown:hover .dropdown-content {
         display: block;
-    }
-
-    /* redimensión del logo */
-    nav a img {
-        width: 30%;
-    }
-
-    /* Para quitar los estilos predeterminados de la lista */
-    ul.menu-desplegable {
-        list-style: none;
-        padding: 0;
-    }
-
-    /* Añade una separación a los elementos de la lista */
-    ul.menu-desplegable li {
-        padding: 0.5em;
-    }
-
-    /* Estilo en los enlaces de la lista */
-    ul.menu-desplegable a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 1.5em;
-        padding: 0.2em 0.4em;
-    }
-
-    /* Cambia los estilos de los enlaces cuando el cursor esta sobre ellos */
-    ul.menu-desplegable a:hover {
-        background-color: #F54927;
-        color: yellow;
-    }
-
-    .ContenedorFooter {
-        background-color: black;
-        padding: .5%;
-    }
-
-    .copy {
-        text-align: center;
-        font-size: 24px;
-        color: white;
     }
 }
 
 /* Para móviles */
 @media (max-width: 480px) {
-
-    nav {
-        position: sticky;
-        top: 0;
-        background-color: white;
-    }
-
-    /* redimensión del icono de hamburguesa */
-    nav svg {
-        width: 50px;
-        height: 50px;
-    }
-
-    /* Cuando el checkbox está marcado, hace que el logo y la lista sean visibles */
-    input:checked~.menu-desplegable {
-        display: block;
-    }
-
-    /* redimensión del logo */
-    nav a img {
-        width: 30%;
-    }
-
-    /* Para quitar los estilos predeterminados de la lista */
-    ul.menu-desplegable {
-        list-style: none;
-        padding: 0;
-    }
-
-    /* Añade una separación a los elementos de la lista */
-    ul.menu-desplegable li {
-        padding: 0.5em;
-    }
-
-    /* Estilo en los enlaces de la lista */
-    ul.menu-desplegable a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 1.5em;
-        padding: 0.2em 0.4em;
-    }
-
-    /* Cambia los estilos de los enlaces cuando el cursor esta sobre ellos */
-    ul.menu-desplegable a:hover {
-        background-color: #F54927;
-        color: yellow;
-    }
-
-    .ContenedorFooter {
-        background-color: black;
-        padding: .5%;
-    }
-
-    .copy {
-        text-align: center;
-        font-size: 24px;
-        color: white;
-    }
+    .menu-container .logo img {
+		width: 60px;
+		height: 60px;
+	}
 }

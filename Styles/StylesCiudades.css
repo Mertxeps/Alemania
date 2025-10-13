@@ -1,6 +1,6 @@
 
 .Gallery {
-  display: flex;              /* activa flexbox */
+	display: flex;              /* activa flexbox */
 	justify-content: center;    /* centra horizontalmente todo el bloque */
 	align-items: flex-start;    /* alinea arriba los tres elementos */
 	gap: 15px;                  /* espacio entre imágenes y tabla */
@@ -364,10 +364,123 @@ Para cerrar, el href="#_" quitar el target. */
 
 /* Para tables */
 @media (max-width: 768px) {
-	
+	/* Galería principal */
+  .Gallery {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .Gallery .item {
+    width: 45%;
+  }
+
+  /* Contenedor de ciudades */
+  .ConteCiudades {
+    flex-direction: column;
+    align-items: center;
+    width: 94%;
+    padding: 4%;
+    gap: 15px;
+  }
+
+  .Ciudades1, .Ciudades2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .Ciudades1 img, .Ciudades2 img {
+    width: 150px;
+  }
+
+  table {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  caption {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .hover-modal {
+    width: 200px;
+  }
+
+  .gallery2 figure img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Para móviles */
 @media (max-width: 480px) {
-	
+	/* Galería superior */
+  .Gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .Gallery .item {
+    width: 90%;
+  }
+
+  /* Contenedor principal */
+  .ConteCiudades {
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    margin: 2% auto;
+    width: 95%;
+  }
+
+  .Ciudades1, .Ciudades2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .Ciudades1 img, .Ciudades2 img {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  caption {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  td:first-child {
+    width: auto;
+  }
+
+  /* Hover modal más compacto */
+  .hover-modal {
+    width: 180px;
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  /* Galería inferior */
+  .gallery2 {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .gallery2 figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    font-size: 14px;
+  }
 }

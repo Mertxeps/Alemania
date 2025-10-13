@@ -176,10 +176,87 @@ main p {
 
 /* Para tables */
 @media (max-width: 768px) {
-	
+	main p {
+        font-size: 20px;
+        width: 85%;
+    }
+
+    #QuenoPare {
+        width: 30%;
+        padding: 0 35% 3% 35%;
+    }
+
+    .TamanoMusica {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .Audios, .Audios1, .Audios2 {
+        width: 90%;
+        padding: 2%;
+    }
+
+    .Negrita {
+        font-size: 28px;
+    }
+
+    #Helen {
+        width: 70%;
+    }
+
+    .IconoDerecha {
+        width: 40px;
+        height: 40px;
+        right: 5%;
+    }
+
+    .IconoIzquierda {
+        width: 40px;
+        height: 40px;
+        left: 5%;
+    }
 }
 
 /* Para móviles */
 @media (max-width: 480px) {
-	
+	 main p {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    #QuenoPare {
+        width: 50%;
+        padding: 0 25% 3% 25%;
+    }
+
+    .TamanoMusica {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .Audios, .Audios1, .Audios2 {
+        width: 95%;
+        padding: 1.5%;
+    }
+
+    .Negrita {
+        font-size: 24px;
+    }
+
+    #Helen {
+        width: 90%;
+        margin: 2% auto;
+    }
+
+    .IconoDerecha {
+        width: 35px;
+        height: 35px;
+        right: 3%;
+    }
+
+    .IconoIzquierda {
+        width: 35px;
+        height: 35px;
+        left: 3%;
+    }
 }

@@ -120,10 +120,99 @@ main p, .Justufucado {
 
 /* Para tables */
 @media (max-width: 768px) {
-	
+	/* Texto animado */
+  .contenedor-scroll {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .contenedor-scroll p {
+    font-size: 32px;
+    animation: scroll-left 12s linear infinite;
+  }
+
+  /* Párrafos generales */
+  main p, .Justificado {
+    font-size: 20px;
+    width: 90%;
+  }
+
+  /* Sección Selección */
+  .Seleccion, .Seleccion1 {
+    grid-template-columns: 1fr; /* Una sola columna */
+    width: 90%;
+  }
+
+  .Seleccion figure, .Seleccion1 figure {
+    width: 90%;
+  }
+
+  .Seleccion figcaption,
+  .Seleccion1 figcaption {
+    font-size: 20px;
+  }
+
+  /* Imágenes */
+  #Copa {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  #Seleccion {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+  }
+
+  #Michael {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
 }
 
 /* Para móviles */
 @media (max-width: 480px) {
-	
+	/* Texto animado */
+  .contenedor-scroll {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  .contenedor-scroll p {
+    font-size: 20px;
+    animation: scroll-left 15s linear infinite;
+  }
+
+  /* Texto general */
+  main p, .Justificado {
+    font-size: 18px;
+    width: 95%;
+    text-align: justify;
+  }
+
+  /* Sección Selección */
+  .Seleccion, .Seleccion1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+
+  .Seleccion figure, .Seleccion1 figure {
+    width: 100%;
+  }
+
+  .Seleccion figcaption,
+  .Seleccion1 figcaption {
+    font-size: 18px;
+  }
+
+  /* Imágenes */
+  #Copa,
+  #Seleccion,
+  #Michael {
+    width: 100%;
+    height: auto;
+  }
 }

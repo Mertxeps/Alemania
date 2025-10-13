@@ -59,10 +59,61 @@ p {
 
 /* Para tables */
 @media (max-width: 768px) {
-	
+	table {
+        width: 80%;              /* La tabla ocupa más ancho */
+        font-size: 16px;
+    }
+
+    caption {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    td, th {
+        padding: 6px 8px;
+        white-space: normal;     /* Permite saltos de línea */
+    }
+
+    p {
+        width: 90%;
+        font-size: 17px;
+        text-align: justify;
+    }
 }
 
 /* Para móviles */
 @media (max-width: 480px) {
-	
+	table {
+        width: 100%;
+        font-size: 14px;
+        box-shadow: none;        /* Elimina la sombra para más limpieza */
+    }
+
+    caption {
+        font-size: 18px;
+        padding: 6px;
+    }
+
+    tr:first-of-type {
+        font-size: 16px;
+    }
+
+    td, th {
+        padding: 5px;
+        display: block;          /* Cada celda ocupa su línea */
+        text-align: left;        /* Mejora legibilidad en móvil */
+        white-space: normal;
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ccc; /* Separa visualmente cada fila */
+    }
+
+    p {
+        width: 95%;
+        font-size: 15px;
+        text-align: justify;
+    }
 }

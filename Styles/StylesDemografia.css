@@ -50,10 +50,67 @@ main a {
 
 /* Para tables */
 @media (max-width: 768px) {
-	
+	main p {
+    width: 85%;                 /* Ocupa más espacio horizontal */
+    font-size: 17px;
+    text-align: justify;        /* Mejora lectura */
+  }
+
+  figure {
+    width: 80%;                 /* Reduce el tamaño del figure */
+    margin: 3% auto;
+  }
+
+  figure img {
+    width: 100%;                /* Imagen se adapta al ancho del contenedor */
+    height: auto;
+    object-fit: contain;
+  }
+
+  figcaption {
+    font-size: 18px;
+    padding-top: 8px;
+  }
+
+  main img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 3% auto;
+  }
 }
 
 /* Para móviles */
 @media (max-width: 480px) {
-	
+	 main p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 4%;
+  }
+
+  figure {
+    width: 95%;
+    margin: 4% auto;
+  }
+
+  figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;         /* Bordes suaves en imágenes */
+  }
+
+  figcaption {
+    font-size: 16px;
+    padding-top: 6px;
+  }
+
+  main img {
+    width: 95%;
+    height: auto;
+    display: block;
+    margin: 4% auto;
+    border-radius: 8px;
+  }
 }

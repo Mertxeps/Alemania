@@ -71,10 +71,78 @@ main ul ul li {
 
 /* Para tables */
 @media (max-width: 768px) {
-	
+	 main {
+        font-size: 20px;
+    }
+
+    main .ColorFondo {
+        height: 50vh;
+        padding: 5vw 2em;
+    }
+
+    #Castillo {
+        width: 95%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+        padding: 0 3%;
+    }
+
+    .UbicacionFisica {
+        margin-left: 3%;
+    }
+
+    main ul {
+        margin-left: 3%;
+    }
+
+    main ul ul li {
+        margin-left: 3%;
+    }
 }
 
 /* Para móviles */
 @media (max-width: 480px) {
-	
+	 main {
+        font-size: 16px;
+    }
+
+    main .ColorFondo {
+        height: 40vh;
+        padding: 4vw 1em;
+    }
+
+    #Castillo {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+        padding: 0 2%;
+    }
+
+    .UbicacionFisica {
+        margin-left: 2%;
+    }
+
+    main ul {
+        margin-left: 2%;
+    }
+
+    main ul ul li {
+        margin-left: 2%;
+    }
 }
