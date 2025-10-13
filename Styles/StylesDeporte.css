@@ -24,7 +24,7 @@ header ul li:nth-of-type(6) {
   100% { transform: translateX(-200%); }    /* Fin del movimiento */
 }
 
-main p, .Justufucado {
+.Justificado {
     text-align: center;
     text-align: justify;
     font-size: 24px;
@@ -35,12 +35,12 @@ main p, .Justufucado {
 
 .Seleccion {
     display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
-	justify-content: center;
-	gap: 5px;
-	width: 100%;
-	margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    margin: auto;
     margin-bottom: 1.5%;
     width: calc(70% - 1em);
 }
@@ -62,17 +62,18 @@ main p, .Justufucado {
     margin: auto;
     width: 100%;
     text-align: justify;
+    font-size: 24px;
 }
 
 .Seleccion1 {
     display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
-	justify-content: center;
-	gap: 5px;
-	width: 100%;
-	margin: auto;
-	margin-top: .5%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    margin: auto;
+    margin-top: .5%;
     width: calc(80% - 1em);
 }
 
@@ -93,6 +94,7 @@ main p, .Justufucado {
     text-align: justify;
     margin: auto;
     width: 100%;
+    font-size: 24px;
 }
 
 #Copa{
