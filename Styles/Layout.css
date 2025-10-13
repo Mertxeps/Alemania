@@ -58,26 +58,6 @@ body {
 	border-radius: 5px;
 }
 
-/* Dropdown */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    list-style: none;
-    background: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.dropdown:hover .dropdown-content {
-	display: block;
-}
-
-.dropdown-content li a {
-	padding: 5px 10px;
-	display: block;
-}
-
 /* Hamburgesa */
 .hamburger {
     display: none;
@@ -152,17 +132,6 @@ body {
     .menu li a {
 		font-size: 18px;
 	}
-
-    /* Dropdown dentro del menú móvil */
-    .dropdown-content {
-        position: static;
-        box-shadow: none;
-        display: none;
-    }
-    
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
 }
 
 /* Para móviles */
