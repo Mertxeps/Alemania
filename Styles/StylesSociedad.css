@@ -63,6 +63,12 @@ p {
 
 /* Para tables */
 @media (max-width: 768px) {
+
+    .Cabecera {
+        margin: auto;
+        width: 100%;
+    }
+
 	table {
         width: 80%;              /* La tabla ocupa más ancho */
         font-size: 16px;
@@ -87,6 +93,12 @@ p {
 
 /* Para móviles */
 @media (max-width: 480px) {
+
+    .Cabecera {
+        margin: auto;
+        width: 100%;
+    }
+    
 	table {
         width: 100%;
         font-size: 14px;
