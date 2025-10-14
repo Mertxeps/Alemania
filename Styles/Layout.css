@@ -85,7 +85,7 @@ body {
 /* --- MEDIA QUERIES --- */
 
 /* Para tables */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .hamburger {
 		display: block;
 	}
@@ -135,7 +135,7 @@ body {
 }
 
 /* Para móviles */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .menu-container .logo img {
 		width: 60px;
 		height: 60px;

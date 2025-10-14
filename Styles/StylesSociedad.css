@@ -62,7 +62,7 @@ p {
 /* --- MEDIA QUERIES --- */
 
 /* Para tables */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     .Cabecera {
         margin: auto;
@@ -92,7 +92,7 @@ p {
 }
 
 /* Para móviles */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
     .Cabecera {
         margin: auto;
