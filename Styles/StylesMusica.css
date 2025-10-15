@@ -158,6 +158,11 @@ main p {
     width: auto;
 }
 
+.Audios2 iframe {
+    display: block;
+    margin: 3% auto;
+}
+
 #Seis {
 	margin-top: 1%;
 }
