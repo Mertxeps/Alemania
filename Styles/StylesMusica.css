@@ -231,6 +231,8 @@ main p {
 	 main p {
         font-size: 16px;
         width: 95%;
+        text-align: justify;
+        padding-top: 2%;
     }
 
     #QuenoPare {
@@ -239,8 +241,10 @@ main p {
     }
 
     .TamanoMusica {
-        flex-direction: column;
         width: 95%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2%;
     }
 
     .Audios, .Audios1, .Audios2 {
@@ -249,12 +253,13 @@ main p {
     }
 
     .Negrita {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     #Helen {
         width: 90%;
         margin: 2% auto;
+        
     }
 
     .IconoDerecha {
@@ -268,4 +273,10 @@ main p {
         height: 35px;
         left: 3%;
     }
+
+    iframe {
+        margin: auto;
+        width: 95%;
+        margin-top: 2%;
+    } 
 }
