@@ -213,4 +213,8 @@ padding-top: 2%;
     width: 100%;
     height: auto;
   }
+
+  .Seleccion p, .Seleccion1 p {
+    font-size: 18px;
+  }
 }

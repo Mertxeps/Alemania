@@ -134,7 +134,7 @@ p {
         border-bottom: 1px solid #ccc; /* Separa visualmente cada fila */
     }
 
-    main p {
+    p {
         margin: auto;
         width: 95%;
         font-size: 24px;
