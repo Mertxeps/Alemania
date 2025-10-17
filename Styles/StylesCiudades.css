@@ -474,16 +474,25 @@ Para cerrar, el href="#_" quitar el target. */
 
   /* Galería inferior */
   .gallery2 {
+    display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
   }
 
-  .gallery2 figure img {
-    width: 100%;
-    height: auto;
+  .gallery2 figure {
+    display: flex;
+    align-items: center; /* centra verticalmente la imagen y el texto */
+    gap: 10px; /* separa la imagen del texto */
   }
 
-  figcaption {
-    font-size: 14px;
+  .gallery2 figure img {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .gallery2 figure figcaption {
+    font-size: 0.9rem;
+    color: #333;
   }
 }
