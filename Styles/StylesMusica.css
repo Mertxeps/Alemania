@@ -247,9 +247,19 @@ main p {
         margin-top: 2%;
     }
 
+    .TamanoMusica audio {
+        display: flex;
+        margin: auto;
+        padding-bottom: 2%;
+    }
+
     .Audios, .Audios1, .Audios2 {
         width: 95%;
         padding: 1.5%;
+    }
+
+    .Titulos p {
+        text-align: center;
     }
 
     .Interlineado p {
