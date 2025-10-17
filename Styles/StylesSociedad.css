@@ -64,11 +64,6 @@ p {
 /* Para tables */
 @media screen and (max-width: 768px) {
 
-    /* .Cabecera {
-        margin: auto;
-        width: 100%;
-    } */
-
 	table {
         width: 80%;              /* La tabla ocupa más ancho */
         font-size: 16px;
@@ -93,17 +88,13 @@ p {
 
 /* Para móviles */
 @media screen and (max-width: 480px) {
-
-    /* .Cabecera {
-        margin: auto;
-        width: 100%;
-    } */
-
     main {
         display: flex;
         align-items: center;
         margin: auto;
         width: 100%;
+        justify-content: center;
+        justify-items: center;
     }
     
 	table {
@@ -134,9 +125,10 @@ p {
         border-bottom: 1px solid #ccc; /* Separa visualmente cada fila */
     }
 
-    .TextoSociedad {
+    .TextoSociedad p {
+        display: flex;
         margin: auto;
-        width: 95%;
+        width: 100%;
         font-size: 24px;
         text-align: justify;
     }
