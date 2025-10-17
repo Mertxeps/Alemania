@@ -218,6 +218,10 @@ p {
     text-align: justify;
   }
 
+  .TextoSociedad p:first-child {
+    margin-top: 5%;
+  }
+
   .Demo {
     display: flex;
     justify-content: center;
