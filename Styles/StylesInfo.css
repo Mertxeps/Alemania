@@ -231,7 +231,8 @@ p {
 
   .DirMap {
     flex-direction: column;
-    width: 100%;
+    margin: auto;
+    width: 90%;
   }
 
    table {
@@ -247,5 +248,12 @@ p {
     td, th {
         padding: 4px 6px;
         white-space: normal;     /* Permite saltos de línea */
-   } 
+   }
+   
+   .TextoSociedad p {
+        width: 100%;
+        font-size: 18px;
+        text-align: justify;
+        padding-left: 10%;
+    }
 }
