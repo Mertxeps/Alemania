@@ -136,6 +136,106 @@ p {
 
 /* --- MEDIA QUERIES --- */
 
+/* para portátiles  */
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .Imagenesbody {
+    display: flex;
+    flex-direction: row; /* apila elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    margin: auto;
+  }
+
+  .Info {
+    position: static; /* elimina el fixed */
+    display: block;
+    margin: 0 auto 15px auto; /* centra y separa del sombreado */
+    width: 40px;
+    height: 40px;
+  }
+
+  .Sombreado {
+    width: 400px;
+    height: 100px;
+    background-color: #CCD1D1;
+    padding: 20px 0;
+    text-align: center;
+    margin: 2% auto 1% .5%;
+  }
+
+  #reloj {
+    font-size: 48px;
+  }
+
+  .reloj {
+    width: 320px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    font: bold 1.5em dotum, calibri, arial;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 34px;
+    text-align: center;
+    font-weight: bold;
+    margin: 1% auto;
+  }
+
+  .DirMap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 2% auto;
+  }
+
+  table {
+    width: 50%;
+    font-size: 18px;
+    margin: auto;
+    box-shadow: 0 8px 12px rgba(73, 67, 67, 0.8);
+  }
+
+  caption {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  td, th {
+    padding: 6px 10px;
+  }
+
+  .TextoSociedad p {
+    width: 70%;
+    font-size: 18px;
+    margin: 1% auto;
+    text-align: justify;
+  }
+
+  .Demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 2% auto;
+  }
+
+  .Trigger {
+    padding: 10px 20px;
+    background: #0ea5a4;
+    color: white;
+    border-radius: 6px;
+    font-size: 22px;
+    text-decoration: none;
+  }
+}
+
 /* Para tables */
 @media (max-width: 768px) {
 	.Imagenesbody {
