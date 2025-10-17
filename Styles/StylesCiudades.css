@@ -420,7 +420,6 @@ Para cerrar, el href="#_" quitar el target. */
 
 /* Para móviles */
 @media (max-width: 480px) {
-	/* Galería superior */
   .Gallery {
     flex-direction: column;
     align-items: center;
@@ -431,7 +430,6 @@ Para cerrar, el href="#_" quitar el target. */
     width: 90%;
   }
 
-  /* Contenedor principal */
   .ConteCiudades {
     flex-direction: column;
     align-items: center;
@@ -451,10 +449,19 @@ Para cerrar, el href="#_" quitar el target. */
     max-width: 250px;
   }
 
-  table {
-    width: 100%;
+   table {
+    width: 95%;
+    max-width: 400px;
+    margin: 0 auto;
     font-size: 14px;
+    table-layout: auto;
   }
+
+  /* td, th {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  } */
 
   caption {
     font-size: 16px;
@@ -465,34 +472,46 @@ Para cerrar, el href="#_" quitar el target. */
     width: auto;
   }
 
-  /* Hover modal más compacto */
   .hover-modal {
     width: 180px;
     font-size: 12px;
     padding: 10px;
   }
 
-  /* Galería inferior */
+    #Gallery2 {
+    display: block;
+    padding-top: 1%;
+    width: 100%;
+  }
+
   .gallery2 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+    justify-items: center;
   }
 
   .gallery2 figure {
+    width: 100%;
+    max-width: none;
     display: flex;
-    align-items: center; /* centra verticalmente la imagen y el texto */
-    gap: 10px; /* separa la imagen del texto */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
   }
 
   .gallery2 figure img {
-    width: 50%;
+    width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 8px;
   }
 
   .gallery2 figure figcaption {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #333;
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-bottom: 5%;
   }
 }
