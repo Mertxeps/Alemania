@@ -257,5 +257,10 @@ p {
         font-size: 18px;
         text-align: justify;
         padding-left: 10%;
+        padding-top: 2%;
+    }
+
+    .TextoSociedad p:first-child {
+        padding-top: 5%;
     }
 }
