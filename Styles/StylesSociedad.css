@@ -84,7 +84,7 @@ p {
         white-space: normal;     /* Permite saltos de línea */
     }
 
-    p {
+    .TextoSociedad {
         width: 90%;
         font-size: 17px;
         text-align: justify;
@@ -134,7 +134,7 @@ p {
         border-bottom: 1px solid #ccc; /* Separa visualmente cada fila */
     }
 
-    p {
+    .TextoSociedad {
         margin: auto;
         width: 95%;
         font-size: 24px;
