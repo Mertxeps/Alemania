@@ -234,5 +234,18 @@ p {
     width: 100%;
   }
 
-    
+   table {
+        width: 100%;             /* La tabla ocupa todo el ancho */
+        font-size: 14px;
+    }
+
+    caption {
+        font-size: 18px;
+        padding: 6px;
+    }
+
+    td, th {
+        padding: 4px 6px;
+        white-space: normal;     /* Permite saltos de línea */
+   } 
 }
