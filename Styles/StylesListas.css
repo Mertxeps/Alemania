@@ -110,12 +110,12 @@ main ul ul li {
 
 /* Para móviles */
 @media (max-width: 480px) {
-	 main {
+	main {
         font-size: 16px;
     }
 
     main .ColorFondo {
-        height: 40vh;
+        height: 34vh;
         padding: 4vw 1em;
     }
 
@@ -129,20 +129,40 @@ main ul ul li {
         text-align: center;
     }
 
-    p {
-        font-size: 16px;
-        padding: 0 2%;
+    #UbicacionFisica {
+        margin: auto;
+        width: 95%;
+        font-size: 20px;
+        padding: 3% 2%;
+        text-align: justify;
     }
 
-    .UbicacionFisica {
+    .UbicacionFisica h1 {
         margin-left: 2%;
     }
 
-    main ul {
+    .UbicacionFisica p {
         margin-left: 2%;
+        font-size: 20px;
+        text-align: justify;
     }
 
-    main ul ul li {
+    /* .Relieve {
         margin-left: 2%;
+    } */
+
+    .Relieve li {
+        margin: auto;
+        width: 90%;
+        margin-left: 7%;
+        padding-bottom: 3%;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .Relieve ul li {
+        margin: auto;
+        width: 90%;
+        margin-left: 8%;
     }
 }
