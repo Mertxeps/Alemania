@@ -64,10 +64,10 @@ p {
 /* Para tables */
 @media screen and (max-width: 768px) {
 
-    .Cabecera {
+    /* .Cabecera {
         margin: auto;
         width: 100%;
-    }
+    } */
 
 	table {
         width: 80%;              /* La tabla ocupa más ancho */
@@ -94,7 +94,14 @@ p {
 /* Para móviles */
 @media screen and (max-width: 480px) {
 
-    .Cabecera {
+    /* .Cabecera {
+        margin: auto;
+        width: 100%;
+    } */
+
+    main {
+        display: flex;
+        align-items: center;
         margin: auto;
         width: 100%;
     }
@@ -127,9 +134,10 @@ p {
         border-bottom: 1px solid #ccc; /* Separa visualmente cada fila */
     }
 
-    p {
+    main p {
+        margin: auto;
         width: 95%;
-        font-size: 15px;
+        font-size: 24px;
         text-align: justify;
     }
 }
