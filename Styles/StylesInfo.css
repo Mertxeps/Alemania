@@ -133,7 +133,6 @@ p {
     visibility: visible;
 }
 
-
 /* --- MEDIA QUERIES --- */
 
 /* para portátiles  */
@@ -338,7 +337,8 @@ p {
   .DirMap {
     flex-direction: column;
     margin: auto;
-    width: 90%;
+    width: 30%;
+    margin-left: 0%;
   }
 
    table {
