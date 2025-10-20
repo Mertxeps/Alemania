@@ -434,7 +434,10 @@ Para cerrar, el href="#_" quitar el target. */
 
   #TablaCiudades {
     width: 100%;
-    overflow-x: auto;
+    overflow-x: scroll; /* auto*/
+    scrollbar-color: red yellow; /* color de la barra y del fondo */
+    scrollbar-width: thin;
+    scroll-behavior:smooth; /* hace que vaya más suave */ 
     margin: 0 auto;
     margin-bottom: 5%;
   }
