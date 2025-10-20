@@ -30,8 +30,8 @@ header ul li:nth-of-type(2) {
 	display: flex;
 	flex-direction: column;     /* que las figuras estén una debajo de otra */
 	gap: 15px;                  /* espacio entre imágenes */
-	align-items: center;        /* centrar las figuras */
-	width: 200px;               /* ancho fijo opcional */
+	align-items: center;        /* centra las figuras */
+	/* width: 200px;               ancho fijo opcional */
 	margin: 0% 3%;
 }
 
@@ -39,11 +39,6 @@ header ul li:nth-of-type(2) {
 	margin: 0;
 	text-align: center;
   margin-bottom: 10%;
-}
-
-.Ciudades1 img, .Ciudades2 img {
-	max-width: 100%;
-	height: auto;
 }
 
 /* Imagenes que se abren al pinchar sobre ellas */
@@ -58,12 +53,6 @@ header ul li:nth-of-type(2) {
   cursor: pointer;
 }
 
-.Ciudades1 img {
-  width: 200px;
-  border-radius: 6px;
-  transition: transform 0.2s;
-}
-
 .Ciudades1 img:hover {
   transform: scale(1.05);
 }
@@ -72,17 +61,12 @@ header ul li:nth-of-type(2) {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  /* margin-right: 7%; */
 }
 
 .Ciudades2 figure {
   text-align: center;
   cursor: pointer;
-}
-
-.Ciudades2 img {
-  width: 200px;
-  border-radius: 6px;
-  transition: transform 0.2s;
 }
 
 .Ciudades2 img:hover {
@@ -140,9 +124,10 @@ table {
   table-layout: fixed;       /* Ajusta las columnas al contenido */
   margin: auto;
   margin-bottom: 5%;
-  width: 50%;
+  width: 85%;
   text-align: center;
   font-size: 24px;
+  margin-top: 1%;
 }
 
 caption {
@@ -449,13 +434,20 @@ Para cerrar, el href="#_" quitar el target. */
     max-width: 250px;
   }
 
+  /* #TablaCiudades {
+    width: 100%;
+    overflow-x: auto;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+
    table {
     width: 95%;
     max-width: 400px;
     margin: 0 auto;
     font-size: 14px;
     table-layout: auto;
-  }
+  } */
 
   /* td, th {
     white-space: normal;
