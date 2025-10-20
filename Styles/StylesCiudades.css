@@ -31,7 +31,6 @@ header ul li:nth-of-type(2) {
 	flex-direction: column;     /* que las figuras estén una debajo de otra */
 	gap: 15px;                  /* espacio entre imágenes */
 	align-items: center;        /* centra las figuras */
-	/* width: 200px;               ancho fijo opcional */
 	margin: 0% 3%;
 }
 
@@ -61,7 +60,6 @@ header ul li:nth-of-type(2) {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
-  /* margin-right: 7%; */
 }
 
 .Ciudades2 figure {
@@ -434,7 +432,7 @@ Para cerrar, el href="#_" quitar el target. */
     max-width: 250px;
   }
 
-  /* #TablaCiudades {
+  #TablaCiudades {
     width: 100%;
     overflow-x: auto;
     margin: 0 auto;
@@ -449,11 +447,11 @@ Para cerrar, el href="#_" quitar el target. */
     table-layout: auto;
   } */
 
-  /* td, th {
+  td, th {
     white-space: normal;
     word-wrap: break-word;
     overflow-wrap: break-word;
-  } */
+  }
 
   caption {
     font-size: 16px;
