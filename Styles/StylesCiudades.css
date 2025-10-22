@@ -481,12 +481,6 @@ Para cerrar, el href="#_" quitar el target. */
     gap: 5px;
   }
 
-  /* .gallery2 figure img {
-    margin: auto;
-    height: auto;
-    border-radius: 8px;
-  } */
-
   #Gallery2 figure img {
     width: 90vw;
     height: 40vh;
