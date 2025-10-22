@@ -28,7 +28,7 @@ header ul li:nth-of-type(2) {
 
 .Ciudades1, .Ciudades2 {
 	display: flex;
-	flex-direction: column;     /* que las figuras estén una debajo de otra */
+	flex-direction: column;     /* las figuras estén una debajo de otra */
 	gap: 15px;                  /* espacio entre imágenes */
 	align-items: center;        /* centra las figuras */
 	margin: 0% 3%;
@@ -146,16 +146,16 @@ tr:first-child {
 }
 
 td, th {
-    border: 1px solid black; /* Líneas negras */
-    padding: 2px 5px;        /* Espacio mínimo dentro de las celdas */
-    white-space: nowrap;     /* Evita que se parta el texto en varias líneas */
+    border: 1px solid black;  /* Líneas negras */
+    padding: 2px 5px;           /* Espacio mínimo dentro de las celdas */
+    white-space: nowrap;        /* Evita que se parta el texto en varias líneas */
     border: none;
 }
 
 td:first-child {
-	width: 4%;                    /* fuerza que coja lo mínimo posible */
+	width: 4%;                    /* Fuerza que coja lo mínimo posible */
 	white-space: nowrap;
-	text-align: center;           /* opcional, para centrar los números */
+	text-align: center;           /* Opcional, para centrar los números */
 	background-color: #C7C2C1;
 }
 
@@ -178,7 +178,7 @@ td:first-child {
 
 .hover-modal {
   position: absolute;
-  top: 110%; /* debajo del botón */
+  top: 110%; /* Debajo del botón */
   left: 0;
   width: 250px;
   padding: 15px;
@@ -214,7 +214,7 @@ td:first-child {
   border-radius: 6px;
 }
 
-/* figura para poder añadir caption luego si se quiere */
+/* Figura para poder añadir caption luego si se quiere */
 .item {
 	overflow: hidden;
 	border-radius: 8px;
@@ -222,7 +222,7 @@ td:first-child {
 	box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
-/* que la imagen cubra manteniendo aspecto */
+/* Para que la imagen cubra manteniendo aspecto */
 .item img {
 	display: block;
 	width: 100%;
@@ -231,7 +231,7 @@ td:first-child {
 	transition: transform .35s ease;
 }
 
-/* efecto hover */
+/* Efecto hover */
 .item:hover img,
 .item:focus-within img {
 	transform: scale(1.05);
@@ -243,7 +243,7 @@ repeat(auto-fill, minmax(...)) hace la galería responsive sin media queries. */
 .gallery2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 14px;
+  gap: 50px;
 }
 
 .gallery2 figure {
@@ -260,11 +260,9 @@ repeat(auto-fill, minmax(...)) hace la galería responsive sin media queries. */
   box-shadow: 0 0 0 3px rgba(21,156,228,0.25);
 }
 
-.gallery2 img {
-  width:100%;
-  height:160px;
-  object-fit: cover;
-  display:block;
+.gallery2 figure img {
+  width: 25vw;
+  height: 25vh;
 }
 
 .gallery2 figcaption {
@@ -300,12 +298,12 @@ repeat(auto-fill, minmax(...)) hace la galería responsive sin media queries. */
   border-radius: 8px;
 }
 
-/* cuando el id es objetivo (target) se muestra */
+/* Cuando el id es objetivo (target) se muestra */
 .lightbox:target {
   display: flex;
 }
 
-/* botón de cerrar (en realidad un enlace) */
+/* Botón de cerrar (en realidad un enlace) */
 .close {
   position: absolute;
   top: 18px;
@@ -318,7 +316,7 @@ repeat(auto-fill, minmax(...)) hace la galería responsive sin media queries. */
 }
 
 /* Cómo funciona:
-los enlaces de miniaturas apuntan a #img1, etc.
+Los enlaces de miniaturas apuntan a #img1, etc.
 Al activarse :target CSS muestra el overlay.
 Para cerrar, el href="#_" quitar el target. */
 
@@ -462,20 +460,20 @@ Para cerrar, el href="#_" quitar el target. */
 
     #Gallery2 {
     display: block;
-    padding-top: 1%;
+    padding-top: 4%;
     width: 100%;
   }
 
   .gallery2 {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 20px; /* 10px */
     justify-items: center;
   }
 
   .gallery2 figure {
+    margin: auto;
     width: 100%;
-    max-width: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -483,9 +481,15 @@ Para cerrar, el href="#_" quitar el target. */
     gap: 5px;
   }
 
-  .gallery2 figure img {
-    width: 100%;
+  /* .gallery2 figure img {
+    margin: auto;
     height: auto;
+    border-radius: 8px;
+  } */
+
+  #Gallery2 figure img {
+    width: 90vw;
+    height: 40vh;
     border-radius: 8px;
   }
 
