@@ -191,6 +191,10 @@ td:first-child {
   z-index: 1000;
 }
 
+.demo a {
+  text-align: center;
+}
+
 .demo:hover .hover-modal {
   opacity: 1;
   visibility: visible;
