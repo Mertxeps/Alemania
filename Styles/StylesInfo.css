@@ -66,6 +66,12 @@ h1 {
     width: 100%;
 }
 
+.DirMap iframe {
+    border: none;
+    width: 750px;
+    height: 600px;
+}
+
 caption {
     font-size: 24px;
     font-weight: bold;
@@ -136,7 +142,6 @@ p {
 /* --- MEDIA QUERIES --- */
 
 /* para portátiles  */
-
 @media (min-width: 1281px) and (max-width: 1440px) {
   .Imagenesbody {
     display: flex;
@@ -337,14 +342,21 @@ p {
   .DirMap {
     flex-direction: column;
     margin: auto;
-    width: 30%;
+    width: 10%; /* 30%; */
     margin-left: 0%;
   }
 
-   table {
-        width: 100%;             /* La tabla ocupa todo el ancho */
-        font-size: 14px;
-    }
+  .DirMap iframe {
+    border: none;
+    width: 420px;
+    /* width: 750px;
+    height: 600px; */
+}
+
+  table {
+    width: 100%;             /* La tabla ocupa todo el ancho */
+    font-size: 14px;
+  }
 
     caption {
         font-size: 18px;
