@@ -272,17 +272,15 @@ main p {
 
     .Negrita {
         font-size: 20px;
-        margin-left: 10%;
+        padding-left: 10%;
     }
 
     #Helen {
         margin: auto;
         width: 90%;
         padding: auto;
-        /* padding: 0 5% 3% 5%; */
         margin-top: 2%;
-        margin-left: 5%
-        /* padding-left: 2.5%; */
+        margin-left: 1.5%;
     }
 
     .IconoDerecha {
