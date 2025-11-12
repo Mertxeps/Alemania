@@ -340,6 +340,20 @@ p {
   }
 
   .DirMap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* ocupa todo el ancho disponible */
+    margin: auto;
+  }
+
+  .DirMap iframe {
+    width: 90%;   /* ocupa el 90% del ancho de pantalla */
+    height: 300px; /* puedes ajustar la altura según te convenga */
+    border: none;
+  }
+
+  /* .DirMap {
     flex-direction: column;
     margin: auto;
     width: 10%;
@@ -349,12 +363,10 @@ p {
   .DirMap iframe {
     border: none;
     width: 200px;
-    /* width: 420px; */
-  }
+  } */
 
   table {
-    width: 95%;
-    /* width: 100%; */
+    width: 97%;
     font-size: 14px;
   }
 
