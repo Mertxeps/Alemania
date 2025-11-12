@@ -348,8 +348,8 @@ p {
   }
 
   .DirMap iframe {
-    width: 90%;   /* ocupa el 90% del ancho de pantalla */
-    height: 300px; /* puedes ajustar la altura según te convenga */
+    width: 70%;   /* ocupa el 90% del ancho de pantalla */
+    height: 150px; /* puedes ajustar la altura según te convenga */
     border: none;
   }
 
