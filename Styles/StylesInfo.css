@@ -343,30 +343,18 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* ocupa todo el ancho disponible */
+    width: 100%;
     margin: auto;
   }
 
   .DirMap iframe {
-    width: 70%;   /* ocupa el 90% del ancho de pantalla */
-    height: 150px; /* puedes ajustar la altura según te convenga */
+    width: 70%;
+    height: 150px;
     border: none;
   }
-
-  /* .DirMap {
-    flex-direction: column;
-    margin: auto;
-    width: 10%;
-    margin-left: 0%;
-  }
-
-  .DirMap iframe {
-    border: none;
-    width: 200px;
-  } */
 
   table {
-    width: 97%;
+    width: 95%;
     font-size: 14px;
   }
 
