@@ -1,142 +1,142 @@
 
 header ul li:nth-of-type(6) {
-    text-decoration: overline;
+  text-decoration: overline;
 }
 
 .Imagenesbody {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 100%;
-    height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  height: auto;
 }
 
 .Info {
-    width: 70px;
-    height: 70px;
-    position: fixed;
-    left: 32%;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  left: 32%;
 }
 
 .Sombreado {
-    margin: auto;
-    width: 380px;
-    height: 100px;
-    margin-top: 2%;
-    padding: 20px 0px;
-    background-color: #CCD1D1;
-    text-align: center;
-    float: center;
-    margin-bottom: 1%;
+  margin: auto;
+  width: 380px;
+  height: 100px;
+  margin-top: 2%;
+  padding: 20px 0px;
+  background-color: #CCD1D1;
+  text-align: center;
+  float: center;
+  margin-bottom: 1%;
 }
 
 #reloj {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 .reloj {
-    margin: auto;
-    width: 300px;
-    height: 60px;
-    border: 1px solid black;
-    background-color: white;
-    font: bold 1.5em dotum, calibri, arial;
-    text-align: center;
+  margin: auto;
+  width: 300px;
+  height: 60px;
+  border: 1px solid black;
+  background-color: white;
+  font: bold 1.5em dotum, calibri, arial;
+  text-align: center;
 }
 
 h1 {
-    margin: auto;
-    width: 100%;
-    padding-bottom: 0%;
-    font-size: 34px;
-    font-weight: bold;
-    text-align: center;
+  margin: auto;
+  width: 100%;
+  padding-bottom: 0%;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .DirMap {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
 }
 
 .DirMap iframe {
-    border: none;
-    width: 750px;
-    height: 600px;
+  border: none;
+  width: 750px;
+  height: 600px;
 }
 
 caption {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
 }
 
 table {
-    border-collapse: collapse; /* Une los bordes */
-    border: none;
-    table-layout: fixed;       /* Ajusta las columnas al contenido */
-    margin: auto;
-    margin-bottom: 3%;
-    width: 50%;
-    text-align: center;
-    border-color: 1px black;
-    border-style: solid;
-    box-shadow: 0 8px 12px rgba(73, 67, 67, 0.8); /*los valores están entre el 0.0 y el 1. El 0.0 es el más bajo y el 1 el más alto*/
+  border-collapse: collapse; /* Une los bordes */
+  border: none;
+  table-layout: fixed;       /* Ajusta las columnas al contenido */
+  margin: auto;
+  margin-bottom: 3%;
+  width: 50%;
+  text-align: center;
+  border-color: 1px black;
+  border-style: solid;
+  box-shadow: 0 8px 12px rgba(73, 67, 67, 0.8); /*los valores están entre el 0.0 y el 1. El 0.0 es el más bajo y el 1 el más alto*/
 }
 
 tr:first-of-type {
-    font-weight: bold;
-    font-size: 18px;
-    padding-top: 3%;
-    padding-bottom: 3%;
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 tr {
-    background-color: lightcyan;
+  background-color: lightcyan;
 }
 
 td, th {
-    padding: 2px 5px;          /* Espacio mínimo dentro de las celdas */
-    white-space: nowrap;       /* Evita que se parta el texto en varias líneas */
-    border: none;
+  padding: 2px 5px;          /* Espacio mínimo dentro de las celdas */
+  white-space: nowrap;       /* Evita que se parta el texto en varias líneas */
+  border: none;
 }
 
 p {
-    text-align: center;
-    font-size: 18px;
-    margin: auto;
-    width: 75%;
-    margin-bottom: 2%;
+  text-align: center;
+  font-size: 18px;
+  margin: auto;
+  width: 75%;
+  margin-bottom: 2%;
 }
 
 .Demo {
-    display: flex;
-    justify-content: center; /* centra horizontalmente */
-    align-items: center;     /* centra verticalmente si tiene altura */
-    margin: 2%;
-    height: 100px; /* opcional, para centrar verticalmente dentro del div */
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente si tiene altura */
+  margin: 2%;
+  height: 100px; /* Centrar verticalmente dentro del div */
 }
 
 .Trigger {
-    padding: 10px 20px;
-    background: #0ea5a4;
-    color: white;
-    border: none;
-    border-radius: 6px;
+  padding: 10px 20px;
+  background: #0ea5a4;
+  color: white;
+  border: none;
+  border-radius: 6px;
 	cursor: pointer;
 	font-size: 24px;
 }
 
 .Demo:hover {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* --- MEDIA QUERIES --- */
@@ -283,25 +283,25 @@ p {
   }
 
   table {
-        width: 80%;              /* La tabla ocupa más ancho */
-        font-size: 16px;
-    }
+    width: 80%;
+    font-size: 16px;
+  }
 
-    caption {
-        font-size: 20px;
-        padding: 8px;
-    }
+  caption {
+    font-size: 20px;
+    padding: 8px;
+  }
 
-    td, th {
-        padding: 6px 8px;
-        white-space: normal;     /* Permite saltos de línea */
-    }
+  td, th {
+    padding: 6px 8px;
+    white-space: normal;     /* Permite saltos de línea */
+  }
 
-    .TextoSociedad {
-        width: 90%;
-        font-size: 17px;
-        text-align: justify;
-    }
+  .TextoSociedad {
+    width: 90%;
+    font-size: 17px;
+    text-align: justify;
+  }
 }
 
 /* Para móviles */
@@ -312,7 +312,7 @@ p {
   }
 
   .Info {
-    position: static; /* Quita el position fixed */
+    position: static;         /* Quita el position fixed */
     display: block;
     margin: 0 auto 10px auto; /* Centra la imagen y deja un margen inferior */
     width: 50px;
@@ -348,35 +348,34 @@ p {
 
   .DirMap iframe {
     border: none;
-    width: 420px;
-    /* width: 750px;
-    height: 600px; */
+    /* width: 420px; */
 }
 
   table {
-    width: 100%;             /* La tabla ocupa todo el ancho */
+    width: 90%;
+    /* width: 100%; */
     font-size: 14px;
   }
 
-    caption {
-        font-size: 18px;
-        padding: 6px;
-    }
+  caption {
+    font-size: 18px;
+    padding: 6px;
+  }
 
-    td, th {
-        padding: 4px 6px;
-        white-space: normal;     /* Permite saltos de línea */
-   }
+  td, th {
+    padding: 4px 6px;
+    white-space: normal;     /* Permite saltos de línea */
+  }
    
-   .TextoSociedad p {
-        width: 100%;
-        font-size: 18px;
-        text-align: justify;
-        padding-left: 10%;
-        padding-top: 2%;
-    }
+  .TextoSociedad p {
+    width: 100%;
+    font-size: 18px;
+    text-align: justify;
+    padding-left: 10%;
+    padding-top: 2%;
+  }
 
-    .TextoSociedad p:first-child {
-        padding-top: 5%;
-    }
+  .TextoSociedad p:first-child {
+    padding-top: 5%;
+  }
 }
